@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML – Farben, Rahmen und Größenangaben</title>
+</head>
+<body>
+    <h1>Loveparade</h1>
+    <h1 style="font-size: 24px; display: flex;"> 
+        <span style="color: white; background-color: red;"          >&nbsp; L &nbsp;</span>
+        <span style="color: white; background-color: orange;"       >&nbsp; O &nbsp;</span>
+        <span style="color: white; background-color: pink;"         >&nbsp; V &nbsp;</span>
+        <span style="color: white; background-color: green;"        >&nbsp; E &nbsp;</span>
+        <span style="color: white; background-color: blue;"         >&nbsp; P &nbsp;</span>
+        <span style="color: white; background-color: lightcoral;"   >&nbsp; A &nbsp;</span>
+        <span style="color: white; background-color: lightpink;"    >&nbsp; R &nbsp;</span>
+        <span style="color: white; background-color: purple;"       >&nbsp; A &nbsp;</span>
+        <span style="color: white; background-color: darkcyan;"     >&nbsp; D &nbsp;</span>
+        <span style="color: white; background-color: black;"        >&nbsp; E &nbsp;</span>
+    </h1>
+
+    <h1 style="margin-top: 10%;">Farbtabelle</h1>
+    <table>
+        <thead style="font-weight: bold;">	
+            <tr>
+                <td style="background-color: black; color: white;">Farbname</td>
+                <td style="background-color: red; color: white;">R</td>
+                <td style="background-color: green; color: white;">G</td>
+                <td style="background-color: blue; color: white;">B</td>
+                <td style="background-color: black; color: white;">HEX</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gold</td>
+                <td>255</td>
+                <td>215</td>
+                <td>0</td>
+                <td>#FFD700</td>
+            </tr>
+            <tr>
+                <td>Gelbgrün</td>
+                <td>154</td>
+                <td>205</td>
+                <td>50</td>
+                <td>#9aCd32</td>
+            </tr>
+            <tr>
+                <td>türkis</td>
+                <td>28</td>
+                <td>93</td>
+                <td>87</td>
+                <td>#FFD700</td>
+            </tr>
+            <tr>
+                <td>blaugrün</td>
+                <td>12</td>
+                <td>186</td>
+                <td>166</td>
+                <td>#0CBAA6</td>
+            </tr>
+            <tr>
+                <td>Himmelsgrün</td>
+                <td>135</td>
+                <td>206</td>
+                <td>235</td>
+                <td>#87ceeb</td>
+            </tr>
+            <tr>
+                <td>magenta</td>
+                <td>255</td>
+                <td>0</td>
+                <td>255</td>
+                <td>#FF00FF</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 style="margin-top: 10%;">Einfache Buttons</h1>
+    <a><button style="border: 3px solid blue ; margin-right: 5%;">Bestellung absenden</button></a>
+    <a><button style="border: 3px solid black ; margin-right: 5%;">Bestellung abbrechnen</button></a>
+    <a><button style="border: 3px double black ;">Bestellung neu erstellen</button></a>
+    
+    <h1 style="margin-top: 10%;">Ampel</h1>
+
+    <style>
+    .lights {
+        background: black;
+        font-size: 300px;
+        height: 300px;
+        margin: 50px;
+        padding: 20px;
+        width: 100px;
+        border: 50%;
+    }
+    .lights span {
+        color: #000;
+        display: block;
+        line-height: 100px;
+        text-align: center;
+        width: 100px;
+    }
+    .lights.green .bottom {
+        color: green;
+    }
+    .lights.yellow .middle {
+        color: yellow;
+    }
+    .lights.red .top {
+        color: red;
+    }
+    </style>
+
+    <div class="lights red yellow green">
+        <span class="top">&bull;</span>
+        <span class="middle">&bull;</span>
+        <span class="bottom">&bull;</span>
+    </div>
+</body>
+</html>
