@@ -1,0 +1,40 @@
+.container_kooperationen{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.td{
+    padding-right: 50px;
+}
+
+/* Idea that bring the img in center position, but then they are not responsive
+and can't go into a new row */
+/* .img_kooperationen {
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding: 2%;
+    cursor: pointer;
+    float: left;
+} */
+
+/*.img_kooperationen {
+    display: flex; pictures doesn't go into next row because of the row 
+    gap: 50px; 
+}*/
+
+.img_kooperationen{
+    margin-left: 3%;
+}
+
+.img_kooperationen:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.space{
+    margin: 5% auto;
+}
