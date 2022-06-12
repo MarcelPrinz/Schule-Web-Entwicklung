@@ -1,0 +1,207 @@
+<!-- wichtiger Hinweis:
+1. pure html und css
+2. Aufgrund der Benutzung ohne das Framework Bootstrap können extra Futeares nicht bereit 
+3. Header, Footer, Datenbank anbindungen und sonstiges würde normalerweise in eine PHP Datei ausgelagert werden, aber für das kleine Projekt nicht notwendig-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <meta name="publisher" content="Marcel Prinz">
+    <meta name="copyright" content="Marcel Prinz">
+    <meta name="keywords" content="Bildung, Lernen, Schule" />
+    <meta name="page-topic" content="Schule, Übersicht, TLS" />
+    <meta name="description" content="Hier befinden wir uns auf der Startseite der Theodor-Litt-Schule" />
+    <meta name="author" content="Marcel Prinz" />
+    <meta name="robots" content="index, follow" /> <!-- Seite wird indexiert und den Links wird gefolgt-->
+    <link rel="stylesheet" href="general/css/general.css">
+    <link rel="stylesheet" href="general/css/home/index.css">
+    <link rel="stylesheet" href="general/css/navbar/navbar.css">
+
+    
+
+        <!-- Google font - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
+</head>
+<body>
+    <!-- Header Infos:
+    - dropdown menü lässt dropdown items nicht erscheinen, aber ist auch noch nicht notwenig (Weiterentwicklungsmöglichkeit)
+    bei thies geschaut, wieso seins funktioniert: Li umschließt mit einer klasse die Display:block hat alles
+    wobei bei mir nur ein link umschlossen wird, statt die unterlinks-->
+    <header>
+        <div class="Header"> 
+            <div class="Navbar">
+                <img src="Images/TLS_logo.png" href="index.html" alt="TLS Logo" id="Logo">
+                <nav>
+                    <ul class="roboto">
+                        <li>
+                            <a class="hoverLine" id="menuMethoden" href="index.html">Startseite</a>
+                        </li>
+                        <li><a class="hoverLine " href="bildungsangebote.html">Bildungsangebote</a></li>
+                        <li><a class="hoverLine" href="tls_angebote.html">TLS Angebote</a></li>
+                            <ul class="dropDownContent">
+                                <li><a class="dropdown-item" href="#">Stellenangebote</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulorganigramm</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulprogramm</a></li> <br> <br>
+                            </ul>
+                        <li><a class="hoverLine" href="über_uns.html">Über&nbspUns</a></li>
+                        <li><a class="hoverLine" href="kooperationen.html">Kooperationen</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div  class="hyphens">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+            <h1 class="roboto">Bildungsangebote</h1>
+        <p class="verdana" style="margin-top: 5%;">Entdecke die derzeitigen Bildungesangebote der Theodor-Litt-Schule<br>​</p>
+        <a href="bildungsangebote.html"><button class="btn_slider roboto">Mehr</button></a>
+        </div>
+        <div class="mySlides">
+            <h1 class="roboto">TLS&nbspAngebote</h1>
+        <p class="verdana" style="margin-top: 5%;">Aktuelle Angebote nur bei der Theodor-Litt-Schule<br>​</p>
+        <a href="bildungsangebote.html"><button class="btn_slider roboto">Mehr</button></a>
+        </div>
+
+        <div class="mySlides">
+            <h1 class="roboto">Über&nbspuns</h1>
+        <p class="verdana" style="margin-top: 5%;">Was ist die Theoder-Litt-Schule und wer steckt dahinter? <br> wir freuen uns Sie kennenzulernen</p>
+        <a href="über_uns.html"><button class="btn_slider roboto">Mehr</button></a>
+        </div>
+
+        <div class="mySlides">
+            <h1 class="roboto">Kooperation</h1>
+        <p class="verdana" style="margin-top: 5%;">Zusammen mit unseren Kooperationspartnern bieten wir den Schülern besondere Weiterentwicklungsmöglichkeiten an<br>​</p>
+        <a href="über_uns.html"><button class="btn_slider roboto">Mehr</button></a>
+        </div>
+    
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <section class="row">
+        <div class="container_tls_info">
+            <h2 class="roboto">Theodor-Litt-Schule</h2>
+            <p class="verdana"> <br>Berufsbildungszentrum Aör
+                <br>Parkstr. 12-18          
+                <br>24534 Neumünster
+                <br>
+                <br>Tel.: +49 04321 942 4910
+                <br>Fax: +49 04321 942 4909
+                <br>Mail: info@tls-nms.de</p>
+        </div>
+    </section>
+</div>
+<h2 class="title">Aktuelle TLS Nachrichten</h2>
+<div class="nachrichten_one">
+    <div class="container_nachrichten">
+        <div class="row"><img src="Images/nachrichten/spenden.png" width="50%" alt=""></img>
+            <div class="container_einzelne_nachrichten row-colomn bg_blue" style="justify-content: space-around;" align="center">
+                <h3 class="roboto">Entdecke deine Stärken!</h3>
+                <p class="verdana p_nachrichten">Mit einer dualen Berufsausbildung im echten Norden.</p>
+                <a  href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten" >mehr</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nachrichten_two" align="center">
+    <img src="Images/nachrichten/spenden.png" width="50%" alt=""></img>
+    <div class="container_einzelne_nachrichten row-colomn bg_blue" style="margin: 5% auto;" align="center">
+        <h3 class="roboto" style="padding-top: 3%;">Entdecke deine Stärken!</h3>
+        <p class="verdana p_nachrichten" >Mit einer dualen Berufsausbildung im echten Norden.</p>
+        <a href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten">mehr</button></a>
+    </div>
+</div>
+
+<div class="nachrichten_one">
+    <div class="container_nachrichten">
+        <div class="row">
+            <div class="container_einzelne_nachrichten row-colomn bg_orange" style="justify-content: space-around;" align="center">
+                <h3 class="roboto" style="padding-top: 3%;">Schüler der Theodor-Litt-Schule gründen ihr erstes Unternehmen</h3>
+                <p class="verdana p_nachrichten">Schülerinnen und Schüler für Innovationen und Gründung zu begeistern, ist das Ziel der StartUp Challenge SH, an der die TLS in diesem Jahr das erste Mal teilnahm. In vier regionalen Wettbewerben in Itzehoe, Husum, Kiel und Neumünster hatten sich 11 Teams im Januar 2022 für das Finale in Kiel qualifiziert. Die Fachhochschule Kiel richtete am 13. Mai das Landesfinale im Audimax aus.</p>
+                <a href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten">mehr</button></a>
+            </div>
+                <div class="container_einzelne_nachrichten row-colomn bg_pink" style="justify-content: space-around;" align="center">
+                    <h3 class="roboto" style="padding-top: 3%;">CLIPS GEGEN RECHTS</h3>
+                    <p class="verdana p_nachrichten">Ein Filmwettbewerb in SH <br>
+                        Die Klasse AVE 21a hat mit der Unterstützung des Klassenlehrerteams Thore Christiansen und Beyza Demirbas teilgenommen und gemeinsam mit dem Filmemacher Claus Oppermann und der Sozialpädagogin Marion Brandt einen Dreh mit verschiedenen Fragen zu Rassismus entwickelt.</p>
+                    <a href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten">mehr</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nachrichten_two" align="center">
+    <div class="container_einzelne_nachrichten row-colomn bg_orange" style="justify-content: space-around; margin: 5% auto;" align="center">
+        <h3 class="roboto" style="padding-top: 3%;">Schüler der Theodor-Litt-Schule gründen ihr erstes Unternehmen</h3>
+        <p class="verdana p_nachrichten">Schülerinnen und Schüler für Innovationen und Gründung zu begeistern, ist das Ziel der StartUp Challenge SH, an der die TLS in diesem Jahr das erste Mal teilnahm. In vier regionalen Wettbewerben in Itzehoe, Husum, Kiel und Neumünster hatten sich 11 Teams im Januar 2022 für das Finale in Kiel qualifiziert. Die Fachhochschule Kiel richtete am 13. Mai das Landesfinale im Audimax aus.</p>
+        <a href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten">mehr</button></a>
+    </div>
+    <div class="container_einzelne_nachrichten row-colomn bg_pink" style="justify-content: space-around; margin: 5% auto;" align="center">
+        <h3 class="roboto" style="padding-top: 3%;">CLIPS GEGEN RECHTS</h3>
+        <p class="verdana p_nachrichten">Ein Filmwettbewerb in SH <br>
+            Die Klasse AVE 21a hat mit der Unterstützung des Klassenlehrerteams Thore Christiansen und Beyza Demirbas teilgenommen und gemeinsam mit dem Filmemacher Claus Oppermann und der Sozialpädagogin Marion Brandt einen Dreh mit verschiedenen Fragen zu Rassismus entwickelt.</p>
+        <a href="ausbildungsvorbereitung.html" ><button class="btn_mehr_nachrichten">mehr</button></a>
+    </div>
+</div>
+
+<h2 class="title" style="margin-top: 5%;">Image Map</h2>
+    <span align="center"><img src="Images/image_map/partnerschulen.PNG" usemap="#image-map"  class="image_map">
+    <map name="image-map">
+        <area target="_blank" alt="WLS" title="WLS" src="Images/image_map/EKS.png" href="https://www.wls-nms.de/" coords="0,406,259,279" shape="rect">
+        <area target="_blank" alt="TLS" title="TLS" href="index.html" coords="880,375,672,218" shape="rect">
+        <area target="_blank" alt="EHKS" title="EHKS" href="https://www.ehks-nms.de/" coords="288,0,547,75" shape="rect">
+    </map>
+    </span>
+
+
+    <footer>
+        <div class="footer"> 
+            <div class="navbar_footer roboto">
+                <img src="Images/TLS_logo.png" href="index.html" alt="TLS Logo" id="Logo">
+                <nav>
+                    <ul class="roboto list_items">
+                        <li>
+                            <a class="hoverLine" id="menuMethoden" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li><a class="hoverLine" href="">TLS&nbspAngebote</a></li>
+                            <ul class="dropDownContent">
+                                <li><a class="dropdown-item" href="#">Stellenangebote</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulorganigramm</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulprogramm</a></li> <br> <br>
+                            </ul>
+                        <li><a class="hoverLine" href="über_uns.html">Über&nbspUns</a></li>
+                        <li><a class="hoverLine" href="impressum.html">Impressum</a></li>
+                        <li><a class="hoverLine" href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </nav>
+                 
+            </div>
+            <!-- Here you can add or delete logos like you want -->
+            <div class="img_footer_nav">
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/berufswahl_siegel_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/digitale_schule_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/MINT_freundlich_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/smart_school_no_bg.png" alt=""></img></a>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="general/js/index.js"></script>
+</body>
+</html>

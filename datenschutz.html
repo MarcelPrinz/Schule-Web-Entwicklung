@@ -1,0 +1,115 @@
+<!-- wichtiger Hinweis:
+1. pure html und css
+2. Aufgrund der Benutzung ohne das Framework Bootstrap können extra Futeares nicht bereit 
+3. Header, Footer, Datenbank anbindungen und sonstiges würde normalerweise in eine PHP Datei ausgelagert werden, aber für das kleine Projekt nicht notwendig-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <meta name="publisher" content="Marcel Prinz">
+    <meta name="copyright" content="Marcel Prinz">
+    <meta name="keywords" content="Bildung, Lernen, Schule" />
+    <meta name="page-topic" content="Schule, Übersicht, TLS" />
+    <meta name="description" content="Der Datenschutz der Theodor-Litt-Schule" />
+    <meta name="author" content="Marcel Prinz" />
+    <meta name="robots" content="index, follow" /> <!-- Seite wird indexiert und den Links wird gefolgt-->
+    <link rel="stylesheet" href="general/css/general.css">
+    <link rel="stylesheet" href="general/css/navbar/navbar.css">
+
+    
+
+        <!-- Google font - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
+<style> 
+body{
+    margin: 0 0;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 25%;
+      padding-right: 25%;
+      text-align: justify; 
+  }
+</style>
+</head>
+<body>
+    <!-- Header Infos:
+    - dropdown menü lässt dropdown items nicht erscheinen, aber ist auch noch nicht notwenig (Weiterentwicklungsmöglichkeit)
+    bei thies geschaut, wieso seins funktioniert: Li umschließt mit einer klasse die Display:block hat alles
+    wobei bei mir nur ein link umschlossen wird, statt die unterlinks-->
+    <header>
+        <div class="Header"> 
+            <div class="Navbar">
+                <img src="Images/TLS_logo.png" href="index.html" alt="TLS Logo" id="Logo">
+                <nav>
+                    <ul class="roboto">
+                        <li>
+                            <a class="hoverLine" id="menuMethoden" href="index.html">Startseite</a>
+                        </li>
+                        <li><a class="hoverLine " href="bildungsangebote.html">Bildungsangebote</a></li>
+                        <li><a class="hoverLine" href="tls_angebote.html">TLS Angebote</a></li>
+                            <ul class="dropDownContent">
+                                <li><a class="dropdown-item" href="#">Stellenangebote</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulorganigramm</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulprogramm</a></li> <br> <br>
+                            </ul>
+                        <li><a class="hoverLine" href="über_uns.html">Über&nbspUns</a></li>
+                        <li><a class="hoverLine" href="kooperationen.html">Kooperationen</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h1 class="roboto title">Datenschutz</h1>
+<div  class="hyphens" align="center">
+<p>Die persönlichen Angaben unserer Schülerinnen und Schüler werden gem. § 30 des Schleswig-Holsteinischen Schulgesetzes (SchulG) und der Datenschutzverordnung Schule erhoben und verarbeitet.Dabei haben diese gem. § 30 Abs. 8 SchulG das Recht, unentgeltlich Auskunft und Akteneinsicht zu verlangen.
+    
+    <br>
+    <br>Bei vermuteten Verletzungen des Datenschutzrechts können sich Schülerinnen und Schüler <a href="https://www.datenschutzzentrum.de/"> an das Unabhängige Landeszentrum für Datenschutz Schleswig-Holstein</a> wenden.
+    <br>
+    <br>Der Schulleiter, Herr OStD Hirt, trägt gem. § 2 SchulDSVO mit Ausnahme der Datenverarbeitung durch Elternvertretungen die Verantwortung für die Beachtung des Datenschutzes.
+    <br>
+    <br>Der Datenschutzbeauftragte Schulen des Landes Schleswig-Holstein ist Torsten Mai (Brunswiker Straße 16 - 22, 24105 Kiel, E-Mail: DatenschutzbeauftragterSchule@bimi.landsh.de, Tel.: 0431 988-2452)
+</p>
+</div>
+
+    <footer style=" position: absolute; 
+    left: 0 ; right: 0; bottom: 0;">
+        <div class="footer" > 
+            <div class="navbar_footer roboto">
+                <img src="Images/TLS_logo.png" href="index.html" alt="TLS Logo" id="Logo">
+                <nav>
+                    <ul class="roboto list_items">
+                        <li>
+                            <a class="hoverLine" id="menuMethoden" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li><a class="hoverLine" href="">TLS&nbspAngebote</a></li>
+                            <ul class="dropDownContent">
+                                <li><a class="dropdown-item" href="#">Stellenangebote</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulorganigramm</a></li> <br> <br>
+                                <li><a class="dropdown-item" href="#">Schulprogramm</a></li> <br> <br>
+                            </ul>
+                        <li><a class="hoverLine" href="über_uns.html">Über&nbspUns</a></li>
+                        <li><a class="hoverLine" href="impressum.html">Impressum</a></li>
+                        <li><a class="hoverLine" href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </nav>
+                 
+            </div>
+            <!-- Here you can add or delete logos like you want -->
+            <div class="img_footer_nav">
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/berufswahl_siegel_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/digitale_schule_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/MINT_freundlich_no_bg.png" alt=""></img></a>
+                <a href="#"><img class="img_footer" src="Images/auszeichnungen/smart_school_no_bg.png" alt=""></img></a>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="general/js/index.js"></script>
+</body>
+</html>
